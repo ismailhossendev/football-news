@@ -1,0 +1,39 @@
+footer{
+    background-color: #161616 ;
+}
+.footer{
+    text-align: center;
+    margin: 0 10%;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer hr{
+    border-color: rgba(255, 255, 255, 0.185);
+}
+.footer h1{
+    font-size: 40px;
+    color: white;
+}
+.footer a{
+    font-size: 16px;
+    color: white;
+    margin: 0 20px;
+}
+
+
+@media screen and (max-width:768px) {
+    .f-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer a{
+        margin: 10px 10px;
+    }
+    .s-icon{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+}

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ---------------
@@ -109,6 +110,9 @@
     width: 252px;
     height: 64px
 }
+#up-coming{
+    padding: 20px 40px;
+}
 #bg-red{
     background-color: #DD0000;
     color: #fff;
@@ -157,10 +161,12 @@
 .time-comment i{
     margin-right: 5px;
 }
-
+.see-more{
+    display: none;
+}
 
 /* media qury for mobile  */
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
 
     .container{
         margin: 1% 4%;
@@ -214,66 +220,16 @@
         padding: 10px;
         height: auto;
     }
+    #up-coming{
+        padding: 0px 20px;
+    }
     #bg-red{
         padding: 10px 33px;
     }
 }
 
 /* media qury for tab  */
-@media screen and (min-width:577px) and (max-width:768px) {
-    .container{
-        margin: 1% 2%;
-    }
-    .headers{
-        flex-direction: column;
-        text-align: center;
-        height: 60vh;
-        padding: 30px;
-        padding-bottom: 1px;
-
-    }
-    .h-left{
-        width: 100%;
-    }
-    .h-left h1{
-        font-size: 22px;
-    }
-    .h-left p{
-        font-size: 14px;
-        margin: 25px 0;
-    }
-    .h-right{
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-    }
-    .h-right img{
-        width:100%;
-        height: 100%;
-        object-fit: contain;
-        position: relative;
-    }
-    .blogs{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-    }
-    .blog{
-        grid-template-columns: repeat(1,1fr);
-        margin-left: 0;
-    }   
-    .blog-menu{
-        background-color: #fff;
-        justify-content: center;
-        height: 200px;
-    } 
-    .blog-menu div{
-        border: 1px solid rgba(0, 0, 0, 0.26);
-        width: auto;
-        padding: 10px;
-        height: auto;
-    }
-}
+/* for tab  */
 @media screen and (min-width:768px) and (max-width:992px) {
     .container{
         margin: 0 5% ;
@@ -325,5 +281,15 @@
     .blog-menu div{
         border: 1px solid rgba(0, 0, 0, 0.26);
     }
-
+    .see-more{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    .see-more a{
+        background-color: #DD0000;
+        padding: 10px 30px;
+        color: #fff;
+        border-radius: 5px;
+    }
 }
