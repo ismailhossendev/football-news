@@ -290,11 +290,13 @@
         margin-top: 5%;
         display: flex;
         justify-content: center;
+        margin: 20px 0;
     }
     .see-more a{
         background-color: #DD0000;
         padding: 10px 30px;
         color: #fff;
         border-radius: 5px;
+        
     }
 }
