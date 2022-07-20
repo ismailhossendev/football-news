@@ -33,6 +33,9 @@
 .h-left{
     width: 40%;
 }
+.for-mo{
+    display: none;
+}
 .h-left h1{
     font-size: 3vw;
 }
@@ -130,7 +133,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
-    margin-left: 5%;
+
 }
 .b-post{
     display: flex;
@@ -185,24 +188,31 @@
     }
     .h-left{
         width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .h-left h1{
         font-size: 22px;
     }
     .h-left p{
-        font-size: 14px;
-        margin: 40px 0;
+        display: none;
+    }
+    .for-mo{
+        display: block;
+        margin-bottom: 15px;
     }
     .h-right{
         width: 100%;
+        height: 50%;
         display: flex;
         align-items: flex-end;
     }
     .h-right img{
         width:100%;
         height: 100%;
-        object-fit: contain;
-        position: relative;
     }
     .blogs{
         display: flex;
@@ -234,14 +244,15 @@
 
 /* media qury for tab  */
 /* for tab  */
-@media screen and (min-width:768px) and (max-width:992px) {
+@media screen and (min-width:769px) and (max-width:992px) {
     .container{
         margin: 0 5% ;
+        display: flex;
     }
     .h-left h1{
         
         margin-left: 50px;
-        width: 150%;
+        width: 100%;
     }
     .h-left p{
         font-size: 1vw;
@@ -257,7 +268,7 @@
         width: 100%;
     }
     .h-left{
-        width: 40%;
+        width: 45%;
     }
     .h-right{
         width: 100%;
